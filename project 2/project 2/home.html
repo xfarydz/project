@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - My Pharmacy</title>
+  <!-- Layout Styles - (Universal, Navigation, Header, Footer) -->
+  <link rel="stylesheet" href="./css/layouts.css" />
+  <!-- Miscellaneous Styles -->
+  <link rel="stylesheet" href="./css/styleham.css">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/82cd30c2d8.js" crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="./js/index.js"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"
+    integrity="sha256-Lsk+CDPOzTapLoAzWW0G/WeQeViS3FMzywpzPZV8SXk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align: center;">Welcome to My Pharmacy</h1>
+    <p style="text-align: center;">Your Health, Our Priority</p>
+    <hr />
+  </header>
+  <nav class="sticky-nav">
+    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul>
+      <li>
+        <a href="home.html"><i class="fas fa-home"></i> HOME</a>
+      </li>
+      <li>
+        <a href="about_us.html"><i class="fas fa-info-circle"></i> ABOUT US</a>
+      </li>
+      <li>
+        <div class="dropdown">
+          <a href="product.html"><i class="fas fa-shopping-bag"></i> PRODUCT</a>
+          <div class="dropdown-content">
+            <a href="weight_management.html">Weight Management</a>
+            <a href="beauty_supplements.html">Beauty Supplements</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="contact_us.html"><i class="fas fa-envelope"></i> CONTACT US</a>
+      </li>
+      <li>
+        <a href="services.html"><i class="fas fa-cogs"></i> SERVICES</a>
+      </li>
+      <li>
+        <div class="search-container">
+          <input type="text" name="search" placeholder="SEARCH..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#cart"><i class="fas fa-shopping-cart"></i> CART</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div id="clock" class="digital-clock"></div>
+
+    <div class="video-wrapper">
+      <div class="video-container">
+        <video width="1300" height="400" controls autoplay>
+          <source src="./videos/youtube.mp4" type="video/mp4">
+          <source src="./videos/youtube.ogg" type="video/ogg">
+        </video>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>DDT4C &copy; Copyright Project 2023</p>
+  </footer>
+
+  <script src="./js/digital_clock.js"></script>
+  <script src="./js/dialog.js"></script>
+</body>
+
+</html>
